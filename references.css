@@ -1,19 +1,3 @@
-#ExperienceHead  {
-  background-color: #FFFFFF;
-  text-align: center;
-  padding: 2px;
-  margin: 0;
-} 
-
-#SubHeading {
-    color: #a03000
-}
-
-body {
-    background-color: #c0c0c0;
-        
-}
-
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -42,3 +26,16 @@ body {
   color: white;
 }
 
+
+/* CSS For Education h3 */
+#ReferencesHead  {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 2px;
+  margin: 0;
+} 
+
+body {
+    background-color: #c0c0c0;
+        
+}
