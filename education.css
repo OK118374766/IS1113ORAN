@@ -22,7 +22,7 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #af3531;
   color: white;
 }
 
@@ -41,14 +41,35 @@ body {
 }
 
 
+/* Colour for subheadings*/
+
+#SubHeading {
+    color: #af3531;
+    display: inline-block;
+}
+
+#ResultsTable {
+    
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
 
 
-
-
-
-
-
+#points {
+    text-align: left;
+}
 
 
 
