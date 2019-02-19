@@ -10,7 +10,7 @@
 .topnav {
   background-color: #333;
   overflow: hidden;
-  margin-bottom: 0;
+  
 }
 
 /* Style the links inside the navigation bar */
@@ -43,3 +43,39 @@
    
         
 }
+
+#services {
+    float: left;
+    background-color: #af3531;
+}
+
+.btn-group {
+    float: left;
+}
+
+.btn-group button {
+  background-color: #FFFFFF; /* White background */
+  border: 1px solid #af3531; /* Green border */
+  color: black; /* Black text */
+  padding: 10px 75px; /* Some padding */
+  cursor: pointer;
+  width: 10%; /* Set a width*/
+  display: inline-block; /* Make the buttons appear below each other */
+   text-align: center;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #af3531;
+}
+
+#CompanyHead  {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 2px;
+  margin: 0;
+} 

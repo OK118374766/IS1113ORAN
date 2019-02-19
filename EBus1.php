@@ -43,9 +43,71 @@
             
       
         </script>
+        
+        
+        <title>Consultants of Swing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- We link this html page to it's corresponding cascading style sheet -->
+        <link rel="stylesheet" type="text/css" href="travel.css">
+    
+        
+        <style type="text/css">
+
+  
+
+
+body {
+    background-color: #c0c0c0;
+        
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #af3531;
+  color: white;
+}
+
+</style>
+        
     </head>
     
     <body>
+        
+        <!-- TopNav Code -->
+          
+ <div class="topnav">
+     
+     <a class="active" href="StrategicConsultingServices.html">Return To Consulting Services</a>
+</div>
+        
+        
+        
+        
+        
+        
         
         <!-- Opening a HTML file -->
         <form name="calculator">
@@ -76,5 +138,19 @@
             
               
         </form>
+        
+        
+        
+        
+         
+        
+        
+       
+         
+          
+        
+        
+        
+        
     </body>
 </html>
