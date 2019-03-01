@@ -18,7 +18,7 @@ $_SESSION['txtTotal'] = $totalValue2;
 <!DOCTYPE html>
 <html>
     <head>
-        <title>eBusiness 2</title>
+        <title>E-Business 2</title>
     </head>
     
     <body>
