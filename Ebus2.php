@@ -24,6 +24,20 @@ $_SESSION['txtTotal'] = $totalValue2;
     <!-- We link this html page to it's corresponding cascading style sheet -->
         <link rel="stylesheet" type="text/css" href="Ebus2.css">
         
+        
+        <script language=Javascript>
+      
+      function isNumberKey(evt)
+      {
+         var charCode = (evt.which) ? evt.which : event.keyCode;
+         if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+
+         return true;
+      }
+      
+   </script>
+        
     </head>
     
     <body>
@@ -33,6 +47,10 @@ $_SESSION['txtTotal'] = $totalValue2;
              <!-- Button that allows the user to return to the cv -->
      <a class="active" href="StrategicConsultingServices.html">Return To Consulting Services</a>
 </div>
+        
+        
+        
+        
         
         <div class="form">
             <form name="Details" method="post" action="Ebus3.php">
@@ -49,12 +67,12 @@ $_SESSION['txtTotal'] = $totalValue2;
                         
                         <tr>
                             <td>Mobile</td>
-                            <td><input type="text" id="txtMobile" name="txtMobile" value="" /></td>
+                            <td><input type="text" id="txtMobile" onkeypress="return isNumberKey(event)" name="txtMobile" value="" /></td>
                         </tr>
                         
                         <tr>
                             <td>PIN</td>
-                            <td><input type="text" id="txtPin" name="txtPin" value="" /></td>
+                            <td><input type="text" id="txtPin" onkeypress="return isNumberKey(event)" name="txtPin" value="" /></td>
                         </tr>
                         
                         <tr>
