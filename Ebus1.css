@@ -32,3 +32,58 @@ body {
   color: white;
 }
 
+#btnCalc {
+  background-color: #af3531;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+#btnClear {
+  background-color: #af3531;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+#btnProceed {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+#btnCalc:hover {
+  color: black;
+}
+
+#btnClear:hover {
+  color: black;
+}
+
+#btnProceed:hover { 
+  background-color: white;  
+  color: black;
+}
+
+#btnReturn:hover {
+   color: black      
+}

@@ -19,16 +19,28 @@ $_SESSION['txtTotal'] = $totalValue2;
 <html>
     <head>
         <title>E-Business 2</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- We link this html page to it's corresponding cascading style sheet -->
+        <link rel="stylesheet" type="text/css" href="Ebus2.css">
+        
     </head>
     
     <body>
+        
+         <div class="topnav">
+     
+             <!-- Button that allows the user to return to the cv -->
+     <a class="active" href="StrategicConsultingServices.html">Return To Consulting Services</a>
+</div>
+        
         <div class="form">
             <form name="Details" method="post" action="Ebus3.php">
                 <center>
                     <table cellspacing="10">
                         <tr>
                             <td><b></b></td>
-                            <td><b>Enter in your details below</b></td>
+                            <td><b>Please enter your payment details</b></td>
                         </tr>
                         <tr>
                             <td>Name</td>
@@ -36,13 +48,13 @@ $_SESSION['txtTotal'] = $totalValue2;
                         </tr>
                         
                         <tr>
-                            <td>Phone Number</td>
-                            <td><input type="text" id="txtNum" name="txtNum" value="" /></td>
+                            <td>Mobile</td>
+                            <td><input type="text" id="txtMobile" name="txtMobile" value="" /></td>
                         </tr>
                         
                         <tr>
-                            <td>Password</td>
-                            <td><input type="text" id="txtPassword" name="txtPassword" value="" /></td>
+                            <td>PIN</td>
+                            <td><input type="text" id="txtPin" name="txtPin" value="" /></td>
                         </tr>
                         
                         <tr>

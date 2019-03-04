@@ -14,7 +14,7 @@ $_SESSION['txtTotal'] = $totalValue;
             
             <div class="topnav">
      
-     <a class="active" href="StrategicConsultingServices.html">Return To Consulting Services</a>
+     <a id="btnReturn" class="active" href="StrategicConsultingServices.html">Return To Consulting Services</a>
 </div>
             
         <div class="form">
@@ -27,16 +27,16 @@ $_SESSION['txtTotal'] = $totalValue;
                     <td><b>Select a Consulting Service</b></td> 
                 </tr>
                 <tr>
-                    <td>Blockchain</td>
-                    <td><input type="radio" id="Blockchain" name="rdoGroup" value="1" /></td>
+                    <td>Blockchain @ €1000</td>
+                    <td><input type="radio" id="Blockchain" name="rdoGroup" value="1000" /></td>
                 </tr>
                 <tr>
-                    <td>Autonomous Things (Robots)</td>
-                    <td><input type="radio" id="AutonomousThings" name="rdoGroup" value="5" /></td>
+                    <td>Autonomous Things (Robots) @ €2000</td>
+                    <td><input type="radio" id="AutonomousThings" name="rdoGroup" value="2000" /></td>
                 </tr>
                 <tr>
-                    <td>Immersive Experience</td>
-                    <td><input type="radio" id="ImmersiveExperience" name="rdoGroup" value="30" /></td>
+                    <td>Immersive Experience @ €3000</td>
+                    <td><input type="radio" id="ImmersiveExperience" name="rdoGroup" value="3000" /></td>
                 </tr>
             </table>
         </center>
@@ -52,15 +52,15 @@ $_SESSION['txtTotal'] = $totalValue;
                     <td><input type="text" id="txtSubTot" name="txtSub" readonly /></td>
                 </tr>
                 <tr>
-                    <td>Discount @ 30%</td>
+                    <td>- Discount @ 10%</td>
                     <td><input type="text" id="txtDisc" name="txtDisc" readonly /></td>
                 </tr>
                 <tr>
-                    <td>+ VAT @ 40%</td>
+                    <td>+ VAT @ 20%</td>
                     <td><input type="text" id="txtVAT" name="txtVAT" readonly /></td>
                 </tr>
                 <tr>
-                    <td>Total</td>
+                    <td>Total (-Discount, +VAT)</td>
                     <td><input type="text" id="txtTotal" name="txtTotal" value="" readonly/></td>
                 </tr>
             </table>
@@ -106,14 +106,15 @@ $_SESSION['txtTotal'] = $totalValue;
                 //function for calculationg the values//
                 function calculation(parmsTotal) {
                     var subTotal = parseFloat(parmsTotal);
-                    var discCalc = parseFloat(subTotal * .30);
-                    var vatCalc= parseFloat(subTotal * .40);    
+                    var discCalc = parseFloat(subTotal * .10);
+                    var vatCalc= parseFloat(subTotal * .20);    
                     var total = parseFloat(subTotal - discCalc + vatCalc);
                     
                     //Inserting them into the correct fields//
-                    document.intCalc.txtDisc.value = discCalc;
-                    document.intCalc.txtVAT.value = vatCalc;
-                    document.intCalc.txtTotal.value = total;
+                    document.intCalc.txtSubTot.value = "€" + subTotal;
+                    document.intCalc.txtDisc.value = "€" + discCalc;
+                    document.intCalc.txtVAT.value = "€" + vatCalc;
+                    document.intCalc.txtTotal.value = "€" + total;
                 }
                 
                 function AmountClear() {
