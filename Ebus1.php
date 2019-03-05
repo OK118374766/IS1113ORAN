@@ -17,10 +17,20 @@ $_SESSION['txtTotal'] = $totalValue;
      <a id="btnReturn" class="active" href="StrategicConsultingServices.html">Return To Consulting Services</a>
 </div>
             
+             <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+         <h2 id="SelectionHead" class="mb-5" style="color: #000;">Consulting Services</h2>  
+      </div>
+             </section>
+            
+            <br /><br />
+            
+            
+            
         <div class="form">
             <form name="intCalc" method="post" action="Ebus2.php">
-        <h1>Shop Calculator</h1>    
-        <hr/>
+            
+        
         <center>
             <table cellspacing="10">
                 <tr>

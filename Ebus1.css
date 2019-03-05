@@ -87,3 +87,10 @@ body {
 #btnReturn:hover {
    color: black      
 }
+
+#SelectionHead  {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 2px;
+  margin: 0;
+} 

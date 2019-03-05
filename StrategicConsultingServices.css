@@ -47,6 +47,7 @@
 #services {
     float: left;
     background-color: #af3531;
+    width: 200px;
 }
 
 .btn-group {

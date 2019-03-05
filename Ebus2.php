@@ -2,12 +2,14 @@
 session_start();
 $fullNameValue = "";
 $totalValue2 = "";
+$mobileNum = "";
 /*
  * Create a session variable for the mobile number
  */
 $totalValue = $_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
 $_SESSION['txtTotal'] = $totalValue2;
+$_SESSION['txtMobile'] = $mobileNum;
 
 /**
  * Allocate the mobile number session variable to a text box
@@ -30,7 +32,7 @@ $_SESSION['txtTotal'] = $totalValue2;
       function isNumberKey(evt)
       {
          var charCode = (evt.which) ? evt.which : event.keyCode;
-         if (charCode > 31 && (charCode < 48 || charCode > 57))
+         if (charCode > 31 && (charCode < 45 || charCode > 57 ))
             return false;
 
          return true;
@@ -49,7 +51,13 @@ $_SESSION['txtTotal'] = $totalValue2;
 </div>
         
         
+        <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+         <h2 id="PaymentHead" class="mb-5" style="color: #000;">Payment Details</h2> 
+      </div>
+        </section>
         
+        <br /><br />
         
         
         <div class="form">
@@ -63,8 +71,8 @@ $_SESSION['txtTotal'] = $totalValue2;
                         <tr>
                             <td>Name</td>
                             <td><input type="text" id="txtName" name="txtName" 
-                                       onkeypress="return (event.charCode > 64 && 
-                                                   event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" value="" required=""/></td>
+                                       onkeypress="return (event.charCode > 64 && event.charCode < 91) ||
+                                                   (event.charCode > 96 && event.charCode < 123) || (event.charCode > 31 && event.charCode < 33)" value="" required=""/></td>
                         </tr>
                         
                         <tr>
