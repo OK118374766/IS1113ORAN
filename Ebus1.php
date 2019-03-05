@@ -28,7 +28,7 @@ $_SESSION['txtTotal'] = $totalValue;
                 </tr>
                 <tr>
                     <td>Blockchain @ €1000</td>
-                    <td><input type="radio" id="Blockchain" name="rdoGroup" value="1000" /></td>
+                    <td><input type="radio" id="Blockchain" name="rdoGroup" value="1000" required=""/></td>
                 </tr>
                 <tr>
                     <td>Autonomous Things (Robots) @ €2000</td>
@@ -41,6 +41,7 @@ $_SESSION['txtTotal'] = $totalValue;
             </table>
         </center>
         <br/>
+        <div id="Costs" style="visibility: hidden">
             <center>
                  <table cellspacing="10">
             <tr>
@@ -65,10 +66,10 @@ $_SESSION['txtTotal'] = $totalValue;
                 </tr>
             </table>
         </center>
-        
+        </div>  
         <br />
             <center>
-            <input type="button" name="btnCalc" id="btnCalc" onclick="calcSub()" value="Calculate Amount"/>
+                <input type="button" name="btnCalc" id="btnCalc" onclick="calcSub(), document.getElementById('Costs').style.visibility = 'visible'" value="Calculate Amount" />
             <input type="button" name="btnClear" id="btnClear" onclick="AmountClear()" value="Clear"/>
             <input type="submit" name="btnProceed" id="btnProceed" onclick="" value="Proceed"/>
         </center>

@@ -62,17 +62,19 @@ $_SESSION['txtTotal'] = $totalValue2;
                         </tr>
                         <tr>
                             <td>Name</td>
-                            <td><input type="text" id="txtName" name="txtName" value="" /></td>
+                            <td><input type="text" id="txtName" name="txtName" 
+                                       onkeypress="return (event.charCode > 64 && 
+                                                   event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" value="" required=""/></td>
                         </tr>
                         
                         <tr>
                             <td>Mobile</td>
-                            <td><input type="text" id="txtMobile" onkeypress="return isNumberKey(event)" name="txtMobile" value="" /></td>
+                            <td><input type="text" id="txtMobile" onkeypress="return isNumberKey(event)" name="txtMobile" value="" required=""/></td>
                         </tr>
                         
                         <tr>
                             <td>PIN</td>
-                            <td><input type="text" id="txtPin" onkeypress="return isNumberKey(event)" name="txtPin" value="" /></td>
+                            <td><input type="text" id="txtPin" onkeypress="return isNumberKey(event)" name="txtPin" value="" required=""/></td>
                         </tr>
                         
                         <tr>
