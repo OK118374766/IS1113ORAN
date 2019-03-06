@@ -28,7 +28,7 @@
 
 
 /* CSS For Education h3 */
-#AboutHead  {
+#PersonalHead  {
   background-color: #FFFFFF;
   text-align: center;
   padding: 2px;
@@ -38,5 +38,9 @@
 body {
     background-color: #c0c0c0;
         
+}
+
+#Name {
+    color: #af3531;
 }
  

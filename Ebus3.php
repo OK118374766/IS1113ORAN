@@ -24,8 +24,15 @@
          <h2 id="ReceiptHead" class="mb-5" style="color: #000;">Purchase Receipt</h2>  
       </div>
            
+           
+           
        </section>
          
+         
+         <br /><br />
+         <br /><br />
+        
+         <section id="Receipt">
         <!-- Starting the session to get the session variable from last page -->
         <?php
         
@@ -33,14 +40,19 @@
         $totalValue2 = $_POST['txtTotal'];
         $fullNameValue = $_POST['txtName'];
         $mobileNum = $_POST['txtMobile'];
-        echo "The name is : ".$fullNameValue.".";
+        echo "The name is : <b>".$fullNameValue."</b>.";
         echo "<br></br>";
-        echo "Mobile Number : ".$mobileNum.".";
+        echo "Mobile Number : <b>".$mobileNum."</b>";
         echo "<br></br>";
-        echo "The total value is : ".$totalValue2.".";
+        echo "The total value is : <b>".$totalValue2."</b>";
         ?>
         
+        <br /><br />
+        <br /><br />
         
+        <p>Thank you for your custom.</p>
+        
+         </section>
         
         
         

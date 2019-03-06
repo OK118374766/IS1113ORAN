@@ -1,3 +1,4 @@
+/* Styles the page header by changing the background colour to white and centering the text */
 #ExperienceHead  {
   background-color: #FFFFFF;
   text-align: center;
@@ -5,17 +6,21 @@
   margin: 0;
 } 
 
+/* Changes the subheading colour to the orange/red colour used throughout the website and 
+changes display to inline */
 #SubHeading {
     color: #af3531;
     display: inline-block;
         
 }
 
+/* Change the background colour of the page body to grey */
 body {
     background-color: #c0c0c0;
         
 }
 
+/* Changes topNav colour to a dark grey along with editing layout */
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -32,13 +37,13 @@ body {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
+/* Change the colour of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add a color to the active/current link */
+/* Add orange/red colour to the current link */
 .topnav a.active {
   background-color: #af3531;
   color: white;
