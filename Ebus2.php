@@ -1,19 +1,17 @@
 <?php
+// starts session
 session_start();
+// resets values
 $fullNameValue = "";
 $totalValue2 = "";
 $mobileNum = "";
-/*
- * Create a session variable for the mobile number
- */
+// values assigned to the variables
 $totalValue = $_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
 $_SESSION['txtTotal'] = $totalValue2;
 $_SESSION['txtMobile'] = $mobileNum;
 
-/**
- * Allocate the mobile number session variable to a text box
- */
+
 
 ?>
 
@@ -28,7 +26,9 @@ $_SESSION['txtMobile'] = $mobileNum;
         
         
         <script language=Javascript>
-      
+            
+      /* function that only allows the keyboard entry of numbers (for mobile number and pin)
+       * and hyphen (-) for the mobile number */
       function isNumberKey(evt)
       {
          var charCode = (evt.which) ? evt.which : event.keyCode;
@@ -37,6 +37,8 @@ $_SESSION['txtMobile'] = $mobileNum;
 
          return true;
       }
+      
+    
       
    </script>
         
@@ -61,6 +63,7 @@ $_SESSION['txtMobile'] = $mobileNum;
         
         
         <div class="form">
+            <!-- form that will be posted to Ebus3.php -->
             <form name="Details" method="post" action="Ebus3.php">
                 <center>
                     <table cellspacing="10">
@@ -70,11 +73,13 @@ $_SESSION['txtMobile'] = $mobileNum;
                         </tr>
                         <tr>
                             <td>Name</td>
+                            <!-- Validation so only letters and spaces can be entered -->
                             <td><input type="text" id="txtName" name="txtName" 
                                        onkeypress="return (event.charCode > 64 && event.charCode < 91) ||
                                                    (event.charCode > 96 && event.charCode < 123) || (event.charCode > 31 && event.charCode < 33)" value="" required=""/></td>
                         </tr>
                         
+                        <!-- As another means of validation, these fields are required -->
                         <tr>
                             <td>Mobile</td>
                             <td><input type="text" id="txtMobile" onkeypress="return isNumberKey(event)" name="txtMobile" value="" required=""/></td>
@@ -82,7 +87,14 @@ $_SESSION['txtMobile'] = $mobileNum;
                         
                         <tr>
                             <td>PIN</td>
-                            <td><input type="text" id="txtPin" onkeypress="return isNumberKey(event)" name="txtPin" value="" required=""/></td>
+                            <div id='pin'
+                            <!-- Type is password and max-length is 4 for validation -->
+                            <td><input type="password" id="txtPin" onkeypress="return isNumberKey(event)" maxlength="4" name="txtPin" value="" required="" />
+                                <img id='EyeIcon' src="EyeIcon.png" onmousedown="txtPin.type='text'" onmouseup="txtPin.type='password'" onmousemove="txtPin.type='password'" >
+                            
+                            </td>
+                            </div>
+                            
                         </tr>
                         
                         <tr>
