@@ -21,9 +21,11 @@ and open the template in the editor.
   <a class="active" href="index.php">Homepage</a>
 </div> 
         
+         <h2 id="HomeHead" class="mb-5" style="color: #000;">Home Page</h2>
+        
         
         <div id="Content">
-            <h1>118374766 - Home!</h1>
+            <h1>118374766</h1>
             
             <br /><br />
              <a href="https://php-is1113oran.herokuapp.com/">https://php-is1113oran.herokuapp.com/</a> 

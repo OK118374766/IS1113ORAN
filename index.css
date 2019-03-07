@@ -38,5 +38,13 @@ body {
   color: white;
 }
 
+/* Styles the page header by changing the background colour to white and centering the text */
+#HomeHead  {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 2px;
+  margin: 0;
+} 
+
 
  
