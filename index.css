@@ -46,5 +46,12 @@ body {
   margin: 0;
 } 
 
+/* Positions the company Logo (Name Inspired by the classic Dire Straits song) */
+#logo {
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13%;  
+}
 
  

@@ -32,5 +32,9 @@ and open the template in the editor.
              <br /><br />
              <a href="https://github.com/OK118374766/IS1113ORAN/graphs/commit-activity">GitHub</a>
         </div>
+         
+         <div id="logo">
+                 <img src="Logo.png" alt="Company Logo">
+         </div>
     </body>
 </html>
