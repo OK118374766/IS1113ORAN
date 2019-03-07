@@ -18,10 +18,10 @@ and open the template in the editor.
   <a href="cv.html">CV</a>
   <a href="interests.html">Interests</a>
   <a href="StrategicConsultingServices.html">Consulting-Services</a>
-  <a class="active" href="index.php">Homepage</a>
+  <a class="active" href="index.php">Assignment Home Page</a>
 </div> 
         
-         <h2 id="HomeHead" class="mb-5" style="color: #000;">Home Page</h2>
+         <h2 id="HomeHead" class="mb-5" style="color: #000;">IS1113 Assignment</h2>
         
         
         <div id="Content">
