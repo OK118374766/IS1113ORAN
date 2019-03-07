@@ -86,3 +86,7 @@ background. the x-index sets depth allowing the logo to be seen over the backgro
   padding: 2px;
   margin: 0;
 } 
+
+#Home {
+      float: left;
+  }
